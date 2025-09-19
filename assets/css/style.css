@@ -1,0 +1,63 @@
+#bg-video {
+    filter: blur(6px) brightness(0.7);
+    transition: filter 0.5s ease;
+}
+
+.glass-effect {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hover-scale {
+    transition: all 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.03) rotate(0.3deg);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.vinyl {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.hidden-fade {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#loading-screen {
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+#loading-screen.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
