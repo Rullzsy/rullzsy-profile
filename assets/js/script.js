@@ -17,10 +17,6 @@ window.addEventListener("load", () => {
     }).catch(() => {
         console.log("Autoplay blocked by browser.");
     });
-
-    setTimeout(() => {
-        document.getElementById("loading-screen").classList.add("fade-out");
-    }, 2000);
 });
 
 soundBtn.addEventListener("click", () => {
