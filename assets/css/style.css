@@ -4,9 +4,15 @@
 }
 
 .glass-effect {
+<<<<<<< HEAD
     background: rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.1);
     animation: fadeIn 1s ease-in-out;
+=======
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+>>>>>>> 206140d5074f32c823b32f2d98768f3a19f05517
 }
 
 .hover-scale {
@@ -14,8 +20,12 @@
 }
 
 .hover-scale:hover {
+<<<<<<< HEAD
     transform: scale(1.03) rotate(0.3deg);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+=======
+    transform: scale(1.02);
+>>>>>>> 206140d5074f32c823b32f2d98768f3a19f05517
 }
 
 .vinyl {
@@ -32,6 +42,7 @@
     }
 }
 
+<<<<<<< HEAD
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -42,6 +53,17 @@
         opacity: 1;
         transform: translateY(0);
     }
+=======
+.music-player {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+    cursor: grab;
+    transition: opacity 0.5s ease;
+}
+
+.music-player:active {
+    cursor: grabbing;
+>>>>>>> 206140d5074f32c823b32f2d98768f3a19f05517
 }
 
 .fade {
@@ -51,6 +73,7 @@
 .hidden-fade {
     opacity: 0;
     visibility: hidden;
+<<<<<<< HEAD
 }
 
 #loading-screen {
@@ -60,4 +83,6 @@
 #loading-screen.fade-out {
     opacity: 0;
     visibility: hidden;
+=======
+>>>>>>> 206140d5074f32c823b32f2d98768f3a19f05517
 }

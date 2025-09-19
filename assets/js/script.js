@@ -8,6 +8,7 @@ const musicPlayer = document.getElementById("music-player");
 let isPlaying = true;
 let videoMode = false;
 
+<<<<<<< HEAD
 window.addEventListener("load", () => {
     video.muted = true;
     video.play().then(() => {
@@ -21,6 +22,11 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         document.getElementById("loading-screen").classList.add("fade-out");
     }, 2000);
+=======
+video.play().catch(() => {
+    isPlaying = true;
+    soundBtn.innerHTML = '<i class="fas fa-play"></i>';
+>>>>>>> 206140d5074f32c823b32f2d98768f3a19f05517
 });
 
 soundBtn.addEventListener("click", () => {
